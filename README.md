@@ -1,7 +1,7 @@
 # Sprint Challenge: JavaScript Fundamentals
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a survey of problems. This Sprint explored JavaScript Fundamentals. During this Sprint, you studied array methods, this keyword, prototypes, and class syntax. In your challenge this week, you will demonstrate proficiency by completing a survey of JavaScript problems.
-hello
+
 ## Instructions
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
@@ -26,13 +26,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+The .map method receives a function as a parameter, applies it on each element and returns an entirely new array.
+The .forEach method receives a function as an argument and executes it once for each array element but returns it as undefined.
+
 2. Explain the difference between a callback and a higher order function.
+
+A higher order function is a function that takes another function as an argument and/or returns a function to its callers.
+A callback function is a function that is passed to another function with the expectation that the other function will call it.
 
 3. What is closure?
 
+Closures give us the ability to put functions together. They let us access functions from the parent scope level in a child scope level.
+
 4. Describe the four rules of the 'this' keyword.
 
+   1. Window Binding - if none of the other rules apply "this" defaults, unless you are in strict mode in which case it will return undefined.
+   2. Implicit Binding - most common rule. When the function is invoked, look to the left of the dot that is what 'this' refers and it only applies to objects with methods.
+   3. Explcit binding - Whenever we use JavaScript’s call or apply method, this is explicitly defined.
+   4. New Binding - When a function is invoked as constructor function using the new keyword 'this' points to the new object that's created.
+
 5. Why do we need super() in an extended class?
+
+ .super() tells a parent’s constructor to be concerned with the child’s attributes.
 
 ### Task 1 - Project Set up
 
